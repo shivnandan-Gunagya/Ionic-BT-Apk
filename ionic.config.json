@@ -1,0 +1,7 @@
+{
+  "name": "btApk",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
