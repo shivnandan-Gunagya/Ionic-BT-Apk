@@ -49,6 +49,7 @@ export class Tab1Page {
   }
 
   async scanError(error: any) {
+    
     this.setStatus('Error ' + error);
   
     const toast = await this.toastCtrl.create({
@@ -60,7 +61,7 @@ export class Tab1Page {
     toast.present();
   }
 
-  // Disconnect peripheral when leaving the page
+
   ionViewWillLeave() {
     console.log('ionViewWillLeave disconnecting Bluetooth');
     this.ble.disconnect(this.peripheral.id).then(
